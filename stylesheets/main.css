@@ -1,0 +1,9 @@
+/* line 2, ../sass/_resources.sass */
+#mainContainer {
+  max-width: 1280px;
+}
+
+/* line 6, ../sass/_resources.sass */
+.contentBlock {
+  padding: 50px;
+}

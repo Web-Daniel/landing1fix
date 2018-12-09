@@ -1,0 +1,293 @@
+@import resources
+@import colors
+@import fonts
+
+div#mainContainer
+    div.contentBlock
+        div.block1
+            background-color: $bgDark
+            color: $textLight
+            div.block1InBlock1
+                h1
+                    @media all and (max-width: 991px)
+                        text-align: center
+                ul
+                    list-style-type: none
+                    padding-inline-start: 34px
+                    margin-top: 50px
+                    padding-left: 0
+                    @media all and (max-width: 991px)
+                        max-width: 469px
+                        display: block
+                        margin: 20px auto 20px auto
+                    li
+                        display: block
+                        margin: 0 auto
+                        font-size: 20px
+                        font-weight: 400
+                        i
+                            margin-right: 10px
+            div.block2InBlock1
+                div.imgContainer
+                    max-width: 469px
+                    max-height: 214px
+                    float: right
+                    @media all and (max-width: 991px)
+                        float: none
+                        margin: 0 auto
+                    img
+                        width: 100%
+        div.block2Big
+            background-color: $bgLight
+            @media all and (max-width: 991px)
+                display: none
+            div.block1InBlock2
+                h4
+                    @include headline4Mixin
+                    margin-bottom: 25px
+                p
+                    @include paragraphMixin
+                    margin-bottom: 15px
+            div.block2InBlock2
+                div.videoContainer
+                    max-width: 430px
+                    max-height: 245px
+                    float: right
+                    img
+                        width: 100%
+        div.block2Small
+            background-color: $bgLight
+            @media all and (min-width: 992px)
+                display: none
+            div.block1InBlock2
+                h4
+                    @include headline4Mixin
+                    margin-bottom: 25px
+                div.videoContainer
+                    max-width: 430px
+                    max-height: 245px
+                    float: right
+                    @media all and (max-width: 767px)
+                        float: none
+                        margin: 0 auto
+                    img
+                        width: 100%
+                p
+                    @include paragraphMixin
+                    margin-bottom: 15px
+        div.block3
+            background-color: $bgGrey
+            padding-bottom: 15px
+            div.block1InBlock3
+                h4
+                    @include headline4Mixin
+                    margin-bottom: 25px
+                    text-align: center
+                div.row
+                    div.media
+                        margin-bottom: 35px
+                        div.square
+                            width: 32px
+                            height: 32px
+                            background-color: $bgDark
+                            position: relative
+                            margin-top: 6px
+                            margin-right: 9px
+                            img
+                                position: absolute
+                                margin: auto
+                                top: 0
+                                right: 0
+                                bottom: 0
+                                left: 0
+                        div.media-body      
+                            p
+                                @include paragraphMixin
+                                margin-bottom: 0
+        div.block4
+            background-color: $bgLight
+            padding-bottom: 20px
+            div.block1InBlock4
+                h4
+                    @include headline4Mixin
+                    text-align: center
+                    margin-bottom: 35px
+                div.row
+                    div.media
+                        margin-bottom: 30px
+                        div.blockForImg4
+                            max-width: 200px
+                            max-height: 150px
+                            margin-right: 15px
+                            @media all and (max-width: 575px)
+                                margin: 0 auto
+                            img
+                                width: 100%
+                        div.media-body
+                            @media all and (max-width: 575px)
+                                display: none
+                            @media all and (max-width: 576px)
+                                display: flex 1
+                            h5
+                                @include headline5Mixin
+                                margin-bottom: 10px
+                            p
+                                @include paragraphMixin
+        div.block5
+            background-color: $bgGrey
+            padding-bottom: 26px
+            div.block1InBlock5
+                h4
+                    @include headline4Mixin
+                    text-align: center
+                    margin-bottom: 35px
+                div.row
+                    div.media
+                        margin-bottom: 24px
+                        div.circle
+                            max-width: 75px
+                            max-height: 75px
+                            margin-right: 25px
+                            @media all and (max-width: 500px)
+                                display: none
+                            img
+                                width: 100%
+                        div.media-body
+                            position: relative
+                            background-color: $bgDarkGrey
+                            padding: 16px 20px 16px 20px
+                            border-radius: 5px
+                            div.darkGreyCircle
+                                position: absolute
+                                left: -10px
+                                top: 25px
+                                background-color: $bgDarkGrey
+                                width: 20px
+                                height: 20px
+                                transform: rotate(45deg)
+                                @media all and (max-width: 500px)
+                                    display: none
+                            p.message
+                                @include paragraphMixin2
+                                margin-bottom: 15px
+                            p.signature
+                                font-size: 14px
+                                font-weight: 400
+                                line-height: 10px
+                                color: #989898
+                                margin-bottom: 0
+        div.block6
+            background-color: $bgLight
+            div.block1InBlock6
+                h4
+                    @include headline4Mixin
+                    text-align: center
+                    margin-bottom: 29px
+                div.row
+                    div.colomn
+                        padding: 0
+                        margin-right: 25px
+                        margin-left: 25px
+                        margin-bottom: 20px
+                        &:nth-child(2)
+                            margin-right: 20px
+                            margin-left: 20px
+                        div.row
+                            div.blockPrice
+                                background-color: $bgDark
+                                padding: 0
+                                padding-bottom: 20px
+                                border-radius: 5px
+                                h5
+                                    @include headline5Mixin
+                                    color: $textLight
+                                    text-align: center
+                                    line-height: 50px
+                                    margin-bottom: 0
+                                div.price
+                                    background-color: $bgLight
+                                    text-align: center
+                                    border: 2px solid $bgDark
+                                    margin-bottom: 15px
+                                    p
+                                        line-height: 71px
+                                        font-size: 40px
+                                        font-weight: 400
+                                        color: $textDark
+                                        margin-bottom: 0
+                                ol
+                                    padding-inline-start: 35px
+                                    margin-bottom: 15px
+                                    li
+                                        @include paragraphMixin3
+                                button
+                                    display: block
+                                    width: calc(100% - 40px)
+                                    background-color: $bgLight
+                                    color: $textDark
+                                    margin: 0 auto
+                                    font-weight: bold
+        div.block7
+            background-color: $bgDark
+            div.block1InBlock7
+                h4
+                    @include headline4Mixin
+                    text-align: center
+                    color: $textLight
+                    margin-bottom: 31px
+            div.block2InBlock7
+                form
+                    div.form-group
+                        div.input-group
+                            div.input-group-prepend
+                                @media all and (max-width: 360px)
+                                    display: none
+                            input.form-control
+                                @media all and (max-width: 360px)
+                                    border-radius: .25rem
+                            textarea#messageTextarea
+                                min-height: 170px
+                    button
+                        display: block
+                        width: 140px
+                        background-color: $bgLight
+                        color: $textDark
+                        margin: 21px auto 0 auto
+                        font-weight: bold
+            div.block3InBlock7
+                div.social
+                    @media all and (max-width: 991px)
+                        text-align: center
+                    p
+                        @include paragraphMixin
+                        color: $textLight
+                        margin-bottom: 25px
+                        @media all and (max-width: 991px)
+                            display: inline-block
+                            margin-left: 5px
+                            margin-right: 5px
+                    i
+                        width: 30px
+                div.socialIcon
+                    @media all and (max-width: 991px)
+                        text-align: center
+                    a
+                        display: inline-block
+                        width: 34px
+                        height: 34px
+                        background-color: $bgLight
+                        border-radius: 45px
+                        text-align: center
+                        @media all and (max-width: 991px)
+                            margin-left: 5px
+                            margin-right: 5px
+                            margin-top: 4px
+                        i
+                            color: $bgDark
+                            line-height: 34px
+        footer#footerOnPage
+            background-color: $bgGrey
+            div.blockInFooter
+                text-align: center
+                p
+                    margin-bottom: 0
