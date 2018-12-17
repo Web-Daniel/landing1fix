@@ -359,6 +359,13 @@ div#mainContainer div.contentBlock div.block6 div.block1InBlock6 div.row div.col
   color: #445161;
   margin: 0 auto;
   font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+div#mainContainer div.contentBlock div.block6 div.block1InBlock6 div.row div.colomn div.row div.blockPrice button:hover {
+  background-color: #445162;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 div#mainContainer div.contentBlock div.block7 {
   background-color: #445162;
@@ -392,6 +399,13 @@ div#mainContainer div.contentBlock div.block7 div.block2InBlock7 form button {
   color: #445161;
   margin: 21px auto 0 auto;
   font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+div#mainContainer div.contentBlock div.block7 div.block2InBlock7 form button:hover {
+  background-color: #445162;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 @media all and (max-width: 991px) {
   div#mainContainer div.contentBlock div.block7 div.block3InBlock7 div.social {
@@ -428,6 +442,13 @@ div#mainContainer div.contentBlock div.block7 div.block3InBlock7 div.socialIcon 
   background-color: #ffffff;
   border-radius: 45px;
   text-align: center;
+  color: #445162;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+div#mainContainer div.contentBlock div.block7 div.block3InBlock7 div.socialIcon a:hover {
+  background-color: #445162;
+  color: #ffffff;
 }
 @media all and (max-width: 991px) {
   div#mainContainer div.contentBlock div.block7 div.block3InBlock7 div.socialIcon a {
@@ -437,7 +458,6 @@ div#mainContainer div.contentBlock div.block7 div.block3InBlock7 div.socialIcon 
   }
 }
 div#mainContainer div.contentBlock div.block7 div.block3InBlock7 div.socialIcon a i {
-  color: #445162;
   line-height: 34px;
 }
 div#mainContainer div.contentBlock footer#footerOnPage {

@@ -227,6 +227,11 @@ div#mainContainer
                                     color: $textDark
                                     margin: 0 auto
                                     font-weight: bold
+                                    transition: .5s
+                                    &:hover
+                                        background-color: $bgDark
+                                        color: $textLight
+                                        border: 1px solid $bgLight
         div.block7
             background-color: $bgDark
             div.block1InBlock7
@@ -254,6 +259,11 @@ div#mainContainer
                         color: $textDark
                         margin: 21px auto 0 auto
                         font-weight: bold
+                        transition: .5s
+                        &:hover
+                            background-color: $bgDark
+                            color: $textLight
+                            border: 1px solid $bgLight
             div.block3InBlock7
                 div.social
                     @media all and (max-width: 991px)
@@ -278,12 +288,16 @@ div#mainContainer
                         background-color: $bgLight
                         border-radius: 45px
                         text-align: center
+                        color: $bgDark
+                        transition: .5s
+                        &:hover
+                            background-color: $bgDark
+                            color: $textLight
                         @media all and (max-width: 991px)
                             margin-left: 5px
                             margin-right: 5px
                             margin-top: 4px
                         i
-                            color: $bgDark
                             line-height: 34px
         footer#footerOnPage
             background-color: $bgGrey
